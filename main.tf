@@ -21,7 +21,7 @@ module "eks" {
 
   vpc_id                   = "vpc-086962b1368da360"
   subnet_ids               = ["subnet-05bcc6b707f8ba3af", "subnet-09d2967a31128cf37"]
-  control_plane_subnet_ids = ["subnet-0735a53a17f965706", "subnet-08bc969fa89b5ec8d"]
+  control_plane_subnet_ids = ["subnet-05bcc6b707f8ba3af", "subnet-09d2967a31128cf37"]
 
 module "karpenter" {
   source = "terraform-aws-modules/eks/aws//modules/karpenter"
